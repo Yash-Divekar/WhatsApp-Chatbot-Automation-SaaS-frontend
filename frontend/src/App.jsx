@@ -13,7 +13,7 @@ export default function App() {
         <AppSidebar />
         <SidebarInset>
           <SiteHeader />
-          <main className="p-6 w-full h-full">
+          <main className="p-0 w-full h-full">
             <AppRoutes />
           </main>
           <Toaster richColors position="bottom-left" />
