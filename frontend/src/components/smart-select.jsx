@@ -47,7 +47,7 @@ export function SmartSelect({
           <ChevronsUpDown className="opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="max-w-[200px]">
+      <PopoverContent className="min-w-[200px]">
         <Command>
           <CommandInput
             placeholder={`Select ${meta || "an option"}`}

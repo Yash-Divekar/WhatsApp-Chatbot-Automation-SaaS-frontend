@@ -34,7 +34,7 @@ export function AppSidebar({ ...props }) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
-        Space switcher
+        <p className="flex justify-center rounded-full font-bold border border-blue-500 bg-blue-50 text-2xl ">S</p>
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />

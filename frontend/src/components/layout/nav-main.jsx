@@ -20,7 +20,7 @@ import { useNavigate } from "react-router-dom";
 
 export function NavMain({ items }) {
   const [activeItem, setActiveItem] = useState(
-    items.find((item) => item.isActive)?.title || items[0]?.title
+    items.find((item) => item.isActive)?.title
   );
   const navigate = useNavigate();
 
@@ -46,7 +46,7 @@ export function NavMain({ items }) {
                   <button
                     onClick={() => handleClick(item.title, item.url)}
                     className={`
-                      w-full flex items-center gap-3 px-3 py-2 rounded-lg text-[16px]
+                      flex items-center gap-3 px-3 py-2 rounded-lg text-[16px]
                       transition-all duration-200
                       ${
                         isActive
